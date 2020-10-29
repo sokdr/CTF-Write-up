@@ -9,4 +9,8 @@ Machine Tabby
 First we fire up nmap.
 
 
-https://user-images.githubusercontent.com/20625004/97608241-be5a6880-1a1a-11eb-9e0f-1eb28f7d99db.PNG
+
+
+
+Dirb to brute force paths of the web ports 80 and 8080.
+
