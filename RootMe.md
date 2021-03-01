@@ -74,5 +74,5 @@ Now that we have access we search for the first flag user.txt
  
  ```THM{********************}```
  
- And now you have all the flags.
+ And now we have all the flags.
 
