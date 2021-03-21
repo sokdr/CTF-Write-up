@@ -139,7 +139,7 @@ Port 80 web access.
 ##### We used the one pass found on the First picture and saved it to a zip file, that contains two files.
 ##### Checked passwd.txt and here’s a Note, the other file ```shado``` has a string.
 
-##### After a lot of searching to identify what was missing a logged in again to the the FTP service.
+##### After a lot of searching to identify what was missing i logged in again to the the FTP service.
 #### There i observed that there was also another user.
 
 ![user](https://user-images.githubusercontent.com/20625004/111905104-bbf0bd80-8a52-11eb-8691-09d45ab71c9d.PNG)
