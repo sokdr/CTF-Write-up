@@ -51,7 +51,7 @@ Port 80 web access.
 
 ##### Again fire ```gobuster``` to search for the file extension with flag ```-x```.
 
-##### ```gobuster dir -u "<Target IP>/island/2100/" -w /path/to/wordlsit -x <name extension>``
+##### ```gobuster dir -u "<Target IP>/island/2100/" -w /path/to/wordlsit -x <name extension>```
 
 ##### ok we found it ```/green_arrow.ticket   (Status: 200) [Size: 71]```
 
@@ -101,7 +101,7 @@ Port 80 web access.
 
 ![hexeditor](https://user-images.githubusercontent.com/20625004/111904529-1d635d00-8a50-11eb-81c7-eab43e90054a.PNG)
 
-##### ```exiftool`` again the image 
+##### ```exiftool``` again the image 
 
 ##### ```ExifTool Version Number         : 12.16```
 ##### ```File Name                       : Leave_me_alone.png```
@@ -144,7 +144,7 @@ Port 80 web access.
 
 ![user](https://user-images.githubusercontent.com/20625004/111905104-bbf0bd80-8a52-11eb-8691-09d45ab71c9d.PNG)
 
-#### Then use SSH with the new name ```ssh slade@<target IP> and use the passwd that we found on the zip file, and you have access to the SSH service.
+#### Then use SSH with the new name ```ssh slade@<target IP>``` and use the passwd that we found on the zip file, and you have access to the SSH service.
 
 ![ssh](https://user-images.githubusercontent.com/20625004/111905208-2570cc00-8a53-11eb-81a2-2cc80efce123.PNG)
 
