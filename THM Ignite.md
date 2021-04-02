@@ -2,9 +2,9 @@
 
 ## Try Hack Me - Lian_Yu
 
-##### URL: https://tryhackme.com/room/ignite , built by https://tryhackme.com/p/Paradox
+##### URL: https://tryhackme.com/room/ignite 
 
-##### Created by _https://tryhackme.com/p/DarkStar7471_
+##### Created by _https://tryhackme.com/p/DarkStar7471_, built by _https://tryhackme.com/p/Paradox_
 
 ![logo](https://user-images.githubusercontent.com/20625004/113415829-b4250780-93c8-11eb-8681-6946442669a5.PNG)
 
