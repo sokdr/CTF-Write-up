@@ -1,6 +1,6 @@
 # CTF-Write-up
 
-## Try Hack Me - Lian_Yu
+## Try Hack Me - Ignite
 
 ##### URL: https://tryhackme.com/room/ignite 
 
