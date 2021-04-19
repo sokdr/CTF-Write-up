@@ -56,7 +56,7 @@
 
 ![ftp](https://user-images.githubusercontent.com/20625004/115248463-616d7e80-a130-11eb-91d5-0abd2e237afc.PNG)
 
-##### There is a not from Amy.
+##### There is a note from Amy.
 
 ![amy](https://user-images.githubusercontent.com/20625004/115248607-84982e00-a130-11eb-8b7d-e33e109ca036.PNG)
 
