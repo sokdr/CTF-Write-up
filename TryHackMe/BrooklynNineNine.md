@@ -8,7 +8,7 @@
 
 ![logo](https://user-images.githubusercontent.com/20625004/115248090-0a67a980-a130-11eb-99af-2edf03ef0eeb.PNG)
 
-##### You should deploy the machine first.
+You should deploy the machine first.
 
 ##### Add the CTF ip to your host file.
 
