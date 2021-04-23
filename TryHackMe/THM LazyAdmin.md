@@ -8,9 +8,9 @@
 
 ![LOGO](https://user-images.githubusercontent.com/20625004/110367101-e9e80200-804f-11eb-8b4f-d78f95f0d930.PNG)
 
-##### You should deploy the machine first.
+You should deploy the machine first.
 
-##### Run nmap against the target machine.
+Run nmap against the target machine.
 
 ```nmap <target IP>```
 
