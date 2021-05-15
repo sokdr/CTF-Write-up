@@ -9,7 +9,7 @@ __https://tryhackme.com__
 
 ### TryHackMe Capture The Flag list: 
 
-| THM CTF                    | Description      | Level               | Link |
+| CTF WriteUp                    | Description      | Level               | Link |
 | :---                       |    :----:        |          ---:       |:----:
 | [Brooklyn Nine Nine](https://github.com/sokdr/CTF-Write-up/blob/main/TryHackMe/THM%20BrooklynNineNine.md)         | This room is aimed for beginner level hackers but anyone can try to hack this box. There are two main intended ways to root the box.            | Easy                |https://tryhackme.com/room/brooklynninenine
 | [Brute It](https://github.com/sokdr/CTF-Write-up/blob/main/TryHackMe/THM%20Brute%20It.md)                   | Learn how to brute, hash cracking and escalate privileges in this box!            | Easy                |https://tryhackme.com/room/bruteit
