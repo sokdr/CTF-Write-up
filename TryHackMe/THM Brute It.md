@@ -1,6 +1,6 @@
 CTF-Write-up
 
-## Try Hack Me - Brooklyn Nine Nine
+## Try Hack Me - Brute IT
 
 ##### URL: https://tryhackme.com/room/bruteit
 
