@@ -18,11 +18,12 @@ Run nmap against the target machine.
 
 ```nmap -sC -A  <target IP>```
 
-Since we found open the ports 8009 we try the tomcat_ghostcat exploit you can use the ``https://github.com/00theway/Ghostcat-CNVD-2020-10487`` or ``metasploit``.
+Since we found open the port 8009 we try the tomcat_ghostcat exploit you can use the ``https://github.com/00theway/Ghostcat-CNVD-2020-10487`` or ``metasploit``.
 
 ![metasplot](https://user-images.githubusercontent.com/20625004/122587196-363ad900-d066-11eb-8690-b811d078aa69.PNG)
 
-By executing the auxiliary we on the target IP we found a username and password.
+By executing the auxiliary on the target IP we found a username and password.
+
 Use them to ssh.
 
 ``ssh skyfuck@targetip``
