@@ -30,3 +30,4 @@ https://tryhackme.com/p/ner01n
 | [Wgel](https://github.com/sokdr/CTF-Write-up/blob/main/TryHackMe/THM%20Wgel%20CTF.md)                       | Can you exfiltrate the root flag?             | Easy                |https://tryhackme.com/room/wgelctf
 | [oShSINT](https://github.com/sokdr/CTF-Write-up/blob/main/TryHackMe/THM%20OhSINT.md)                     | Are you able to use open source intelligence to solve this challenge?             | Easy                |https://tryhackme.com/room/ohsint
 | [Tomghost](https://github.com/sokdr/CTF-Write-up/blob/main/TryHackMe/THM%20tomghost.md)  |Identify recent vulnerabilities to try exploit the system or read files that you should not have access to. | Easy            | https://tryhackme.com/room/tomghost
+[ColddBox:Easy](https://github.com/sokdr/CTF-Write-up/blob/main/TryHackMe/THM%20ColddBox:%20Easy.md) | An easy level machine with multiple ways to escalate privileges. | Easy | https://tryhackme.com/room/colddboxeasy
