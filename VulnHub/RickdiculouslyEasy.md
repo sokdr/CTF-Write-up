@@ -158,7 +158,7 @@ Run ``sudo -l`` to see what the user can run with root privileges
 
 ![sudo](https://user-images.githubusercontent.com/20625004/160253715-e3c2d2f9-6c40-4433-8a8e-cb1f31812814.PNG)
 
-User can execute any command using sudo so use ``sudo su`` to privelege to escalation:
+User can execute any command using sudo so use ``sudo su`` to escalate our privileges:
 
 ![root](https://user-images.githubusercontent.com/20625004/160253813-081a850e-9107-4c26-9965-52074e52c209.PNG)
 
