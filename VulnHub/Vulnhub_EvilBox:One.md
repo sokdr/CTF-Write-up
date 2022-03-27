@@ -12,7 +12,7 @@ At first we run ``nmap`` tool to find open ports.
 
 ![nmap](https://user-images.githubusercontent.com/20625004/160284688-284e8800-6710-4247-a7b2-9a1b59391590.PNG)
 
-There two open ports lets access port 80.
+There are two open ports lets access port 80.
 
 ![apache](https://user-images.githubusercontent.com/20625004/160284732-48c8dd77-6565-4214-8f31-84fdc3ccd719.PNG)
 
