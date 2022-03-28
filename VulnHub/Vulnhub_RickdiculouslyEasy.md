@@ -17,7 +17,7 @@ Run nmap against the target machine.
 
 ![nmap](https://user-images.githubusercontent.com/20625004/160244982-b3f9b951-bcd3-4e84-8d58-2e07ce0715d1.PNG)
 
-From the outpout we see that on port 13337 we have found a flag (10) points. (10/130)
+From the outpout we see that on port 13337 we have found a flag (10) points. **(10/130)**
 
 ![flag1](https://user-images.githubusercontent.com/20625004/160245058-95d62490-11ab-4089-baa0-dda4ea22c9a2.PNG)
 
@@ -31,7 +31,7 @@ Connect to the service with anonymous for both username and password.
 
 Inside there is a file download it.
 
-We have find the second flag (10) points. (20/130)
+We have find the second flag (10) points. **(20/130)**
 
 ![flag2](https://user-images.githubusercontent.com/20625004/160245260-1c0636a0-f41a-48ca-9366-690fba0dc6cc.PNG)
 
@@ -45,7 +45,7 @@ By using ``gobuster`` we were able to find additional paths
 
 ![gobuster](https://user-images.githubusercontent.com/20625004/160245436-bda34fca-1947-4902-877b-bf04a20b6e0f.PNG)
 
-We have found another flag (10) points. (30/130)
+We have found another flag (10) points. **(30/130)**
 
 ![flag3](https://user-images.githubusercontent.com/20625004/160245575-d45551a4-451a-4a4c-9514-6f2ad263c159.PNG)
 
@@ -82,7 +82,7 @@ Nice on the bottom we see three users. From previous step we have a password ``w
 
 ![flag6](https://user-images.githubusercontent.com/20625004/160248055-049febd6-f068-4157-ab04-98831e049259.PNG)
 
-Success we found another flag (10) points. (40/130)
+Success we found another flag (10) points. **(40/130)**
 
 
 ![python](https://user-images.githubusercontent.com/20625004/160251823-d28fa2c5-721a-42eb-9ebb-470cd7da4237.PNG)
@@ -105,7 +105,7 @@ Nice now for the zip file. Unzip the file ``unzip file`` is asking for password,
 
 ![flag7](https://user-images.githubusercontent.com/20625004/160252111-478d2ee5-790d-413c-ab68-394f960ba851.PNG)
 
-Nice we found another flag (20) points. (60/130)
+Nice we found another flag (20) points. **(60/130)**
 
 Now back again on Summer's access let's dig on Rick's home directory.
 
@@ -125,7 +125,7 @@ As user ``Summer`` in that directory we do not have permissions to execute it. L
 
 ![copy](https://user-images.githubusercontent.com/20625004/160252535-417b721a-e1a7-4889-9ae1-59e848237a0c.PNG)
 
-Nice we found another flag (20) points. (80/130)
+Nice we found another flag (20) points. **(80/130)**
 
 ![flag8](https://user-images.githubusercontent.com/20625004/160252571-79434006-12ea-4daf-9783-ebd329052b07.PNG)
 
@@ -162,13 +162,13 @@ User can execute any command using sudo so use ``sudo su`` to escalate our privi
 
 ![root](https://user-images.githubusercontent.com/20625004/160253813-081a850e-9107-4c26-9965-52074e52c209.PNG)
 
-Success and we found the flag on the root directory, flag (30) points. (110/130)
+Success and we found the flag on the root directory, flag (30) points. **(110/130)**
 
 Moving on to port 9090 another web site.
 
 ![flag4](https://user-images.githubusercontent.com/20625004/160245859-8228f4dd-99d2-4f15-9cf0-228c8efe8298.PNG)
 
-We found another flag (10) points. (120/130)
+We found another flag (10) points. **(120/130)**
 
 Moving on to port 60000, the output from ``nmap`` was the following.
 ```60000/tcp open  unknown
@@ -181,7 +181,7 @@ Lets use netcat ``nc target IP port``
 
 ![flag5](https://user-images.githubusercontent.com/20625004/160245969-d92964fa-a94f-4f0a-b0cb-98b763070e2d.PNG)
 
-Another flag success (10) points. (130/130)
+Another flag success (10) points. **(130/130)**
 
 
 
