@@ -1,5 +1,5 @@
 # CTF-Write-up
-CTF Write-up and info
+**CTF Write-up and info**
 
 This is a collection of various CTF's along with my writeups and walkthroughs.
 
