@@ -10,7 +10,6 @@
 ![rickandmorty](https://user-images.githubusercontent.com/20625004/160244882-a26c7784-c26c-415b-a091-9e49f37636e6.gif)
 
 
-
 Run nmap against the target machine.
 
 ```nmap -sC -A  <target IP> -p-```
