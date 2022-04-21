@@ -20,7 +20,7 @@ Nothing there, but lets check also ``view page source`` of the page, and we foun
 
 ![comment](https://user-images.githubusercontent.com/20625004/164456938-5726a38f-2972-4193-8318-1894852238f5.PNG)
 
-It seemed like Base64, so decode it using ``base64`` command. The output shows another encodeded text, it seems like Base64, so decoded it again, now
+It seemed like Base64, so decode it using ``base64`` command. The output shows another encodeded text, it seems like ``base64``, so decoded it again, now
 we found something interesting a path.
 
 ![base64](https://user-images.githubusercontent.com/20625004/164457930-258c0850-2322-4a66-b4f6-089e0820d2e5.PNG)
@@ -30,14 +30,14 @@ Access the new page.
 ![php](https://user-images.githubusercontent.com/20625004/164458185-1d8e0e27-d26f-4ef2-ae3e-c399dd7f73b9.PNG)
 
 It seems to be a to-do list, from the list we understand that ``ping`` and ``privilege escalation`` are not fixed yet.
-``ping`` from the list indicates a command injection might exist, lets use the ``cmd`` parameter to see.
+``ping`` from the list indicates a ``command injection`` might exist, lets use the ``cmd`` parameter to see.
 
 ![ping](https://user-images.githubusercontent.com/20625004/164458891-6d15bf00-4168-4e1e-8b42-01f80d78a9eb.PNG)
 
 
 ![ping1](https://user-images.githubusercontent.com/20625004/164459059-6e9237ab-4c1c-499c-8164-fb41758866ff.PNG)
 
-Success command injection is working. The ``cmd`` parameter is working and we added ``id`` and ``ls -l`` commands as parameter values.
+Success ``command injection`` is working. The ``cmd`` parameter is working and we added ``id`` and ``ls -l`` commands as parameter values.
 
 The next step here is to obtain shell access.
 
@@ -53,7 +53,7 @@ You can use ``python -c 'import pty; pty.spawn("/bin/bash")'`` command to upgrad
 
 ![system1](https://user-images.githubusercontent.com/20625004/164462346-a9ce9a02-a471-4c6a-ba3a-fe052331ac66.PNG)
 
-After enumaration and searching, we search for ``SUID (Set owner User ID up on execution)`` permissions.
+After enumaration and searching around, then we search for ``SUID (Set owner User ID up on execution)`` permissions.
 
 ![find](https://user-images.githubusercontent.com/20625004/164463852-415044ae-439e-4530-a4cd-7fbbb6e72c2f.PNG)
 
