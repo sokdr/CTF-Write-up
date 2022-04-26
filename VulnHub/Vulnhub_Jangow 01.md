@@ -54,9 +54,23 @@ After digging around with no success, lets access the target vm, with user _``ja
 
 ![vm1](https://user-images.githubusercontent.com/20625004/165254583-f53626f2-e10a-4a35-9394-0fe56099d892.PNG)
 
-Lets search for any exploits regarding the target's kernel version.
+Lets search for any exploits regarding the target's kernel version. After searching and trials and erros i found this exploit.
 
+_https://www.exploit-db.com/exploits/45010_ 
 
+Download it and complile it.
+
+``gcc ./file -o file``
+
+After we uploaded the file on the target maching from the ``FTP`` access.
+
+![ftp_upload](https://user-images.githubusercontent.com/20625004/165258371-89abc55d-791c-4ab4-83c0-31afac60c5be.PNG)
+
+Then by changing the persmission of the file ``chmod +x file`` we executed the exploit and escalated our privileges.
+
+On ``root`` folder you will find the _root_flag_.
+
+![root_flag](https://user-images.githubusercontent.com/20625004/165258937-612eab37-bbc6-492e-be1f-1efa9bf4867d.PNG)
 
 
 
