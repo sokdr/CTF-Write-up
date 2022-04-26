@@ -46,5 +46,9 @@ In ``wordpress`` there is a configuration file ``config.php``.
 
 ![config](https://user-images.githubusercontent.com/20625004/165250726-c4b12f59-0edb-4a5c-9819-6620bd2f5abb.PNG)
 
+The files contains username and password, use that on the ``FTP`` service we found earlier with ``nmap``.
+
+We used to accesss the ``FTP`` with user _``desafio02``_ without any success and then with user _``jangow01``_ with success.
+
 
 
