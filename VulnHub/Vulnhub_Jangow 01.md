@@ -48,7 +48,15 @@ In ``wordpress`` there is a configuration file ``config.php``.
 
 The files contains username and password, use that on the ``FTP`` service we found earlier with ``nmap``.
 
-We used to accesss the ``FTP`` with user _``desafio02``_ without any success and then with user _``jangow01``_ with success.
+We accesssed the ``FTP`` with user _``desafio02``_ without any success and then with user _``jangow01``_ with success, digging around showed nothing.
+
+After digging around with no success, lets access the target vm, with user _``jangow01_``.
+
+![vm1](https://user-images.githubusercontent.com/20625004/165254583-f53626f2-e10a-4a35-9394-0fe56099d892.PNG)
+
+Lets search for any exploits regarding the target's kernel version.
+
+
 
 
 
