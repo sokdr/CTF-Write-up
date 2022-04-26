@@ -40,7 +40,11 @@ We found users ``jangow01`` and ``desafio02``. lets access the home directory of
 
 We found the _user flag_, nice.
 
+Earlier with command ``ls - l`` in parameter ``buscar`` we found some paths, access ``wordpress``.
 
+In ``wordpress`` there is a configuration file ``config.php``.
+
+![config](https://user-images.githubusercontent.com/20625004/165250726-c4b12f59-0edb-4a5c-9819-6620bd2f5abb.PNG)
 
 
 
