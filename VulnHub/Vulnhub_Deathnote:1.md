@@ -57,12 +57,41 @@ Searching around we found hint ``notes.txt``.
 
 ![notes](https://user-images.githubusercontent.com/20625004/166148207-4729d7b9-cf4c-4cae-b0dd-22c51cf53b96.PNG)
 
+![notes1](https://user-images.githubusercontent.com/20625004/166148261-0c6c537d-e55d-47a4-a545-8559957bc6ee.PNG)
 
+It seems to have password inside. Lets use ``hydra`` and port ``ssh`` with that list and the users we have.
 
+``hydra -l l -P notes.txt ssh://target IP -vv -I -t4``
 
+![ssh](https://user-images.githubusercontent.com/20625004/166148331-57aaa101-47a0-4518-8972-711f76320d3a.PNG)
 
+Success we found password for user ``l``.
 
+![luser](https://user-images.githubusercontent.com/20625004/166148371-a0a8c750-4588-4788-9edb-6c3a5ea655f8.PNG)
 
+After a lot of search within the machine i found another hint.
 
+![hint1](https://user-images.githubusercontent.com/20625004/166148428-7a9d7606-513d-46c0-88d3-1e3d11674630.PNG)
 
+Use ``https://gchq.github.io/CyberChef/``.
+
+![hex](https://user-images.githubusercontent.com/20625004/166148469-b012cabe-db06-4d87-a76e-6bdbeb0e0651.PNG)
+
+Lets take the output and bake it again it seems to be base64 encoding.
+
+![base64](https://user-images.githubusercontent.com/20625004/166148506-05777074-e668-4e7d-92c9-0f4dce2f75b1.PNG)
+
+We found a password lets use it for user ``kira``.
+
+``su kira``.
+
+![kira1](https://user-images.githubusercontent.com/20625004/166148552-f4a11b09-f697-40f9-966a-906ad4a8fca8.PNG)
+
+Success now we have to escalate further our privileges.
+
+Type ``sudo -l``.
+
+![privileges](https://user-images.githubusercontent.com/20625004/166148597-f5fff98b-15a0-4e27-9916-b765e89dfd44.PNG)
+
+Success we are user ``root`` and on the ``root`` folder you will find the last flag.
 
