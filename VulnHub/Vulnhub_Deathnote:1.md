@@ -59,7 +59,7 @@ Searching around we found hint ``notes.txt``.
 
 ![notes1](https://user-images.githubusercontent.com/20625004/166148261-0c6c537d-e55d-47a4-a545-8559957bc6ee.PNG)
 
-It seems to have passwords inside. Lets use ``hydra`` and service ``ssh`` with that list and the users we have.
+It seems to have passwords inside. Lets use ``hydra`` against service ``ssh`` with that list and the users we have.
 
 ``hydra -l l -P notes.txt ssh://target IP -vv -I -t4``
 
