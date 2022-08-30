@@ -52,13 +52,13 @@ We will use ``john`` with the following command since we know the hash is of sha
 
 ``john --format=raw-sha1 sha.txt --wordlist=/path/to/wordlist/``
 
-We finally found the password. Since ``SSH`` port is also open we try to access with username admin.
+We finally found the password. Since ``SSH`` port is also open we try to access with username ``admin``.
 
-ssh admin@targetIP
+``ssh admin@targetIP``
 
 No success, after further enumaration we use again ``nmap`` now with all ports.
 
-```nmap -sC -A  <target IP> -p- ```
+``nmap -sC -A  <target IP> -p- ``
 
 We found a new port ``8765``.
 
@@ -69,4 +69,21 @@ Now we see a portal.
 We use the ``admin`` username and the password that we found earlier and we access the web application.
 
 ![admin_panel_1](https://user-images.githubusercontent.com/20625004/187390006-ee1bd23f-f784-4543-b106-500cbe053e59.PNG)
+
+It appears that we can add a comment to the website. Further by inspecting the source code of the page there is comment about another user and an ssh key.
+
+![otheruser](https://user-images.githubusercontent.com/20625004/187390871-e02e78fd-4edb-4481-a9b7-f5e37edc0af5.PNG)
+
+Back on the page we found we try to post something and error pops up that says: ``“Insert XML Code!”``.
+
+Maybe the website is vulnerable to ``XML``, following the guideline ``https://owasp.org/www-community/vulnerabilities/XML_External_Entity_%28XXE%29_Processing`` we try to inject with the comment area the below code.
+
+```<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE root [<!ENTITY test SYSTEM 'file:///etc/passwd'> ]>
+<comment>
+  <name>Joe Hamd</name>
+  <author>Barry Clad</author>
+  <com>&test;</com>
+</comment>```
+
 
