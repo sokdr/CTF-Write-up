@@ -126,7 +126,7 @@ On second's user home directory there is a file ``/home/username/live_log``.
 To further inspect the file we use commands ``file`` and ``strings``.
 
 We observer that the binary executed the ``tail`` command to show the content of the ``/var/log/nginx/access.lo`` file. In order to exploit it, we
-need to go ``/tmp`` folder, and create a ``tail`` file and  spawn a new bash instance, and added this one to the path and executed it again.
+need to go ``/tmp`` folder, and create a ``tail`` file and  spawn a new bash instance, and add this one to the path and executed it again.
 
 ```#!/bin/bash
 
@@ -137,4 +137,7 @@ Make the file we created executable ``chmod +x /tmp/tail``.
 
 ![flag_second](https://user-images.githubusercontent.com/20625004/187403642-b467b8ec-b41e-4173-8f70-91de7dace971.PNG)
 
+On ``root`` directory you can find the second flag.
+
+![root_flag](https://user-images.githubusercontent.com/20625004/187404542-b561a0d9-a122-4c9d-bb91-a6522cfa0b26.PNG)
 
