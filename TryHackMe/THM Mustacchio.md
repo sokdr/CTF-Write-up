@@ -36,26 +36,37 @@ Accessing the ``custom`` directory reveals another directory ``js`` beneath that
 ![custom_js](https://user-images.githubusercontent.com/20625004/187386684-63eace75-a7f7-4ac9-9d33-4b8383209291.PNG)
 
 
-
-![bak](https://user-images.githubusercontent.com/20625004/187387521-c38d8cd0-6ac9-42c1-a694-d1b42b441dee.PNG)
+![bak](https://user-images.githubusercontent.com/20625004/187388454-8ec4242d-fc82-40a4-a578-8436002b34cd.PNG)
 
 
 with command ``file`` we found that the file is an SQLite database, and we can view the content with ``cat`` command.
 
-We have a user called "admin" and hash id. With ``hash-identifier`` tool we found that the hash is sha1.
-
+We have a user called "admin" with a hash id. With ``hash-identifier`` tool we found that the hash is sha1.
 
 
 ![hash](https://user-images.githubusercontent.com/20625004/187388019-324effee-e859-44d4-bc46-e0c5f5b0c57a.PNG)
 
+In order to find the password you can use online tools such as ``https://crackstation.net/`` or tools such as ``john``.
 
+We will use ``john`` with the following command since we know the hash is of sha1.
 
-users.bak file which is a SQLite database.
+``john --format=raw-sha1 sha.txt --wordlist=/path/to/wordlist/``
 
-We found nothing of use. Now lets run again ``nmap`` with all ports.
+We finally found the password. Since ``SSH`` port is also open we try to access with username admin.
+
+ssh admin@targetIP
+
+No success, after further enumaration we use again ``nmap`` now with all ports.
 
 ```nmap -sC -A  <target IP> -p- ```
 
 We found a new port ``8765``.
 
-Lets 
+Now we see a portal.
+
+![admin_panel](https://user-images.githubusercontent.com/20625004/187389686-b8a0e787-68cd-4036-b699-58c3b7204989.PNG)
+
+We use the ``admin`` username and the password that we found earlier and we access the web application.
+
+![admin_panel_1](https://user-images.githubusercontent.com/20625004/187390006-ee1bd23f-f784-4543-b106-500cbe053e59.PNG)
+
