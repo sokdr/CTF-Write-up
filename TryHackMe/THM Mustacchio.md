@@ -79,11 +79,29 @@ Back on the page we found we try to post something and error pops up that says: 
 Maybe the website is vulnerable to ``XML``, following the guideline ``https://owasp.org/www-community/vulnerabilities/XML_External_Entity_%28XXE%29_Processing`` we try to inject with the comment area the below code.
 
 ```<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE root [<!ENTITY test SYSTEM 'file:///etc/passwd'> ]>
+<!DOCTYPE comment [<!ENTITY read SYSTEM "/etc/passwd"> ]>
 <comment>
-  <name>Joe Hamd</name>
-  <author>Barry Clad</author>
-  <com>&test;</com>
-</comment>```
+  <name>test</name>
+  <author>test</author>
+  <com>&read;</com>
+</comment>
+```
+
+
+![passwd](https://user-images.githubusercontent.com/20625004/187391967-214ddd6d-4440-4658-bafe-891f5bdd41ec.PNG)
+
+Now we can read the contents of ``/etc/passwd`` and get a list of users on the system. We found two users and for the one user we have the comment from
+the source code informing us about an ssh key.
+
+We can use that information and further use a payload to read the contents of tha file for the given user.
+
+We can modiy the payload we used earlier and include ``'file:///home/username/.ssh/id_rsa'`` by using the default location of ``id_rsa``.
+
+![ssh_key](https://user-images.githubusercontent.com/20625004/187399534-60c4bc80-1c86-4781-9d97-181548da779f.PNG)
+
+
+Now we found the users ssh key. Copy the whole key to a file on your machine machine. The key is ENCRYPTED, and password protected. 
+We need to use ``ssh2john`` tool and the crack it with ``john``.
+
 
 
