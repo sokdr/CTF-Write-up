@@ -1,4 +1,4 @@
-CTF-Writeup 🕵️‍♂️💻
+CTF-Writeup
 
 
 A collection of Capture The Flag (CTF) challenges with detailed write-ups and walkthroughs.
