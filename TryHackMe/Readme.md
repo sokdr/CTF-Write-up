@@ -26,6 +26,7 @@ https://tryhackme.com/p/ner01n
 | [Lian Yu](https://github.com/sokdr/CTF-Write-up/blob/main/TryHackMe/THM%20Lian_Yu.md)                    | A beginner level security challenge             | Easy                |https://tryhackme.com/room/lianyu
 | [Pickle Rick](https://github.com/sokdr/CTF-Write-up/blob/main/TryHackMe/THM%20Pickle%20Rick.md)                | A Rick and Morty CTF. Help turn Rick back into a human!             | Easy                |https://tryhackme.com/room/picklerick
 | [RootMe](https://github.com/sokdr/CTF-Write-up/blob/main/TryHackMe/THM%20RootMe.md)                     | A ctf for beginners, can you root me?             | Easy                |https://tryhackme.com/room/rrootme
+| [TakeOver](https://github.com/sokdr/CTF-Write-up/blob/main/TryHackMe/THM%20TakeOver.md) | This challenge revolves around subdomain enumeration | Easy |https://tryhackme.com/room/takeover
 | [Team](https://github.com/sokdr/CTF-Write-up/blob/main/TryHackMe/THM%20Team.md)                       |  Beginner friendly boot2root machine             | Easy                |https://tryhackme.com/room/teamcw
 | [Wgel](https://github.com/sokdr/CTF-Write-up/blob/main/TryHackMe/THM%20Wgel%20CTF.md)                       | Can you exfiltrate the root flag?             | Easy                |https://tryhackme.com/room/wgelctf
 | [oShSINT](https://github.com/sokdr/CTF-Write-up/blob/main/TryHackMe/THM%20OhSINT.md)                     | Are you able to use open source intelligence to solve this challenge?             | Easy                |https://tryhackme.com/room/ohsint
