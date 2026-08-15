@@ -24,7 +24,7 @@ Port 80 HTTP.
 
 ![port80](https://user-images.githubusercontent.com/20625004/115248763-a5f91a00-a130-11eb-9bce-7050f8db3490.PNG)
 
-Using ``gobuster`` did not show any intersting directories.
+Using ``gobuster`` did not show any interesting directories.
 
 Lets view source of the page.
 
@@ -32,7 +32,7 @@ Lets view source of the page.
 
 There is a hint that should help you what to do next.
 
-OK lets donwload the background picture.
+OK lets download the background picture.
 
 ``wget http://target IP>/path/to/jpg``
 
