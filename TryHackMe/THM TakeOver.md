@@ -12,6 +12,5 @@
 
 We fire up the virtual environment and then we add the domain to `/etc/hosts`.
 
-<img width="804" height="40" alt="domain1_hosts" src="https://github.com/user-attachments/assets/84c041bf-90e9-46d9-b619-5621892d18a2" />
 
 
